@@ -837,9 +837,9 @@ EdgeID Contractor::LoadEdgeExpandedGraph(
 
         edge_based_edge_list.emplace_back(std::move(inbuffer));
 
-        // This is the jump target of the `goto` a few lines back.  It's used when we find a
-        // speed=0 edge and we want to skip adding it to the edge_based_edge_list.
-        skip_this_edge: ;
+    // This is the jump target of the `goto` a few lines back.  It's used when we find a
+    // speed=0 edge and we want to skip adding it to the edge_based_edge_list.
+    skip_this_edge:;
     }
 
     util::SimpleLogger().Write() << "Done reading edges";
