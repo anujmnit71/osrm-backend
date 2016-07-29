@@ -794,6 +794,9 @@ EdgeID Contractor::LoadEdgeExpandedGraph(
                         // This is one of the few good use-cases for `goto` (a break/continue
                         // on a parent loop), consider carefully the extra complexity involved
                         // if you decide to remove this.
+                        // Note, we need to increment the penaltyblock here because the goto
+                        // skips the regular incrementing lower down.
+                        penaltyblock++;
                         goto skip_this_edge;
                     }
                 }
