@@ -24,7 +24,7 @@ Feature: Traffic - speeds
         And the speed file
         """
         1,2,0
-        2,1,27
+        2,1,0
         2,3,27
         3,2,27
         1,4,27
@@ -42,6 +42,6 @@ Feature: Traffic - speeds
             | b    | c  | bc,bc          | 27 km/h |
             | a    | d  | ad,ad          | 27 km/h |
             | d    | c  | dc,dc          | 36 km/h |
-            | g    | b  | ab,ad,de,eb,eb | 30 km/h |
-            | a    | g  | ad,de,eb,ab,ab | 30 km/h |
+            | g    | b  | fb,fb          | 36 km/h |
+            | a    | g  | ad,df,fb,fb    | 30 km/h |
 
